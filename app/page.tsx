@@ -1,43 +1,43 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, LayoutTemplate, ShoppingCart, Zap } from "lucide-react";
+import { ArrowRight, Shirt, Gem, Package } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 
 const categories = [
   {
-    icon: <LayoutTemplate size={28} />,
-    title: "Premium Themes",
-    desc: "Responsive, beautifully designed templates for any niche.",
+    icon: <Shirt size={28} />,
+    title: "Premium Fashion",
+    desc: "Contemporary clothing crafted from the finest fabrics for the modern wardrobe.",
   },
   {
-    icon: <ShoppingCart size={28} />,
-    title: "E-Commerce Plugins",
-    desc: "Powerful extensions to scale your WooCommerce store.",
+    icon: <Package size={28} />,
+    title: "Traditional Wear",
+    desc: "Authentic Nigerian attire — kaftans, agbadas, and ankara — honoring our rich heritage.",
   },
   {
-    icon: <Zap size={28} />,
-    title: "Performance Tools",
-    desc: "Caching and SEO utilities to keep your site blazing fast.",
+    icon: <Gem size={28} />,
+    title: "Handcrafted Accessories",
+    desc: "Bags, jewellery, and scarves made by skilled Katsina artisans with generations of craft.",
   },
 ];
 
 const whyChooseUs = [
-  { title: "Quality Over Quantity", desc: "Every theme and plugin undergoes rigorous testing for compatibility, security, and speed." },
-  { title: "Extensive Documentation", desc: "Clear, step-by-step guides and documentation to help you get started quickly." },
-  { title: "Priority Support", desc: "Your purchase comes with regular updates and priority customer support when you need it." },
+  { title: "Authentic Craftsmanship", desc: "Every piece is made by skilled hands using time-honoured techniques and premium materials sourced from across Nigeria and beyond." },
+  { title: "Quality Guaranteed", desc: "We stand behind every product we sell. If you are not satisfied, our team is here to make it right — no hassle, no delay." },
+  { title: "Fast Nationwide Delivery", desc: "Orders are processed and dispatched within 2 business days, with reliable delivery across Nigeria and selected international destinations." },
 ];
 
 const process = [
-  { step: "1", title: "Choose Your Solution", desc: "Browse our library and find the perfect theme or plugin for your project." },
-  { step: "2", title: "Instant Download", desc: "Complete your secure purchase and download your zip files immediately." },
-  { step: "3", title: "Install & Create", desc: "Upload to your WordPress dashboard, follow our quick-start guides, and launch your site faster than ever." },
+  { step: "1", title: "Browse Our Collection", desc: "Explore our curated range of premium fashion, traditional wear, and handcrafted accessories — something for every occasion." },
+  { step: "2", title: "Place Your Order", desc: "Add items to your cart, choose your currency, and complete a secure checkout in under two minutes." },
+  { step: "3", title: "Delivered to Your Door", desc: "We package your order with care and dispatch it swiftly. Track your shipment from our warehouse straight to your door." },
 ];
 
 const fadeInUp: Variants = {
   initial: { opacity: 0, y: 30 },
-  whileInView: { 
-    opacity: 1, 
+  whileInView: {
+    opacity: 1,
     y: 0,
     transition: { duration: 0.6, ease: "easeOut" }
   }
@@ -45,7 +45,7 @@ const fadeInUp: Variants = {
 
 const staggerContainer: Variants = {
   initial: { opacity: 0 },
-  whileInView: { 
+  whileInView: {
     opacity: 1,
     transition: { staggerChildren: 0.2 }
   }
@@ -53,8 +53,8 @@ const staggerContainer: Variants = {
 
 const staggerItem: Variants = {
   initial: { opacity: 0, y: 20 },
-  whileInView: { 
-    opacity: 1, 
+  whileInView: {
+    opacity: 1,
     y: 0,
     transition: { duration: 0.5, ease: "easeOut" }
   }
@@ -67,7 +67,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-24 text-center">
         <div className="absolute inset-0 pointer-events-none"
-          style={{ backgroundImage: "radial-gradient(ellipse at center, rgba(201, 169, 97, 0.12) 0%, transparent 70%)" }} />
+          style={{ backgroundImage: "radial-gradient(ellipse at center, rgba(20, 184, 166, 0.12) 0%, transparent 70%)" }} />
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -75,22 +75,22 @@ export default function HomePage() {
           className="relative z-10 flex flex-col items-center"
         >
           <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-6 max-w-4xl">
-            Build Better Websites, Faster.
+            Wear Your Heritage. Own Your Style.
           </h1>
           <p className="text-brand-gray max-w-2xl text-lg mb-10 leading-relaxed">
-            Welcome to PluginHive Co. Discover premium, clean-coded WordPress themes and powerful plugins designed to elevate your web projects. Whether you&apos;re an agency, freelancer, or store owner, we have the tools you need to succeed.
+            Welcome to Span Hattan — a premium fashion and lifestyle brand rooted in Katsina, Nigeria. We bring you exquisite clothing, authentic traditional wear, and handcrafted accessories that tell a story of culture, quality, and elegance.
           </p>
           <Link
             href="/shop"
             className="bg-brand-teal text-brand-dark px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-brand-teal-light transition-all inline-flex items-center gap-2 rounded-full"
           >
-            Explore Our Catalog <ArrowRight size={16} />
+            Explore Our Collection <ArrowRight size={16} />
           </Link>
         </motion.div>
       </section>
 
       {/* ABOUT SNIPPET */}
-      <motion.section 
+      <motion.section
         initial="initial"
         whileInView="whileInView"
         viewport={{ once: true, margin: "-50px" }}
@@ -98,30 +98,30 @@ export default function HomePage() {
         className="max-w-4xl mx-auto px-6 py-24 text-center"
       >
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          Crafted for Performance and Scale.
+          Crafted with Pride, Worn with Confidence.
         </h2>
         <p className="text-brand-gray text-lg leading-relaxed">
-          We are a team of passionate developers and designers dedicated to building digital products that just work. At PluginHive Co, we believe that setting up a stunning, high-converting website shouldn&apos;t require compromising on speed or security. Our code is lightweight, our designs are modern, and our support is unmatched.
+          At Span Hattan, we believe that clothing is more than fabric — it is identity. Born in Katsina and inspired by the rich textile traditions of Northern Nigeria, our collections blend contemporary design with authentic craftsmanship to create pieces that stand apart. Every stitch, every dye, and every cut is a reflection of our commitment to quality.
         </p>
       </motion.section>
 
       {/* CATEGORIES */}
       <section className="bg-brand-navy/30 py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <motion.div 
+          <motion.div
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true, margin: "-50px" }}
             variants={fadeInUp}
           >
             <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-6">
-              Everything You Need to Grow
+              Something for Every Occasion
             </h2>
             <p className="text-brand-gray text-center mb-16 text-lg">
-              Browse our core categories tailored to modern web creators:
+              From boardrooms to ceremonies, we have the piece that completes your look:
             </p>
           </motion.div>
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="whileInView"
@@ -147,19 +147,19 @@ export default function HomePage() {
 
       {/* WHY CHOOSE US */}
       <section className="max-w-6xl mx-auto px-6 py-24">
-        <motion.h2 
+        <motion.h2
           initial="initial"
           whileInView="whileInView"
           viewport={{ once: true, margin: "-50px" }}
           variants={fadeInUp}
-          className="font-display text-4xl font-bold text-center mb-16"
+          className="font-display text-4xl font-bold text-center mb-6"
         >
-          The <span className="text-brand-teal">PluginHive Advantage</span>
+          The <span className="text-brand-teal">Span Hattan</span> Difference
         </motion.h2>
         <p className="text-brand-gray text-center max-w-2xl mx-auto mb-16 text-lg">
-          Why do thousands of developers trust our products? Because we prioritize quality over quantity. Every theme and plugin undergoes rigorous testing for compatibility, security, and speed. Plus, your purchase comes with extensive documentation, regular updates, and priority customer support.
+          We do not just sell clothes. We build relationships with our customers through the shared values of quality, authenticity, and impeccable service.
         </p>
-        <motion.div 
+        <motion.div
           variants={staggerContainer}
           initial="initial"
           whileInView="whileInView"
@@ -178,16 +178,16 @@ export default function HomePage() {
       {/* PROCESS */}
       <section className="bg-brand-navy/30 py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <motion.h2 
+          <motion.h2
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true, margin: "-50px" }}
             variants={fadeInUp}
             className="font-display text-4xl font-bold text-center mb-16"
           >
-            From Download to Launch in Minutes
+            Simple. Secure. Delivered.
           </motion.h2>
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="whileInView"
@@ -210,7 +210,7 @@ export default function HomePage() {
       </section>
 
       {/* FINAL CTA */}
-      <motion.section 
+      <motion.section
         initial="initial"
         whileInView="whileInView"
         viewport={{ once: true, margin: "-50px" }}
@@ -218,10 +218,10 @@ export default function HomePage() {
         className="py-32 px-6 text-center"
       >
         <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
-          Ready to Upgrade Your Website?
+          Ready to Elevate Your Wardrobe?
         </h2>
         <p className="text-brand-gray max-w-xl mx-auto mb-10 text-lg">
-          Join a growing community of web professionals building better digital experiences with PluginHive Co.
+          Join a growing community of style-conscious individuals across Nigeria and the world who choose Span Hattan for quality that speaks for itself.
         </p>
         <Link
           href="/shop"

@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { CartProvider } from "@/context/CartContext";
+import { CurrencyProvider } from "@/context/CurrencyContext";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -17,8 +18,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "PluginHive Co | Build Better Websites, Faster.",
-  description: "Discover premium, clean-coded WordPress themes and powerful plugins designed to elevate your web projects.",
+  title: "Span Hattan | Premium Fashion & Lifestyle",
+  description: "Discover premium fashion and lifestyle products from Span Hattan — Katsina's home of quality clothing, traditional wear, and handcrafted accessories.",
 };
 
 export default function RootLayout({
@@ -29,11 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
       <body className="bg-brand-dark text-white antialiased" suppressHydrationWarning>
-        <CartProvider>
-          <Navbar />
-          {children}
-          <Footer />
-        </CartProvider>
+        <CurrencyProvider>
+          <CartProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </CartProvider>
+        </CurrencyProvider>
       </body>
     </html>
   );

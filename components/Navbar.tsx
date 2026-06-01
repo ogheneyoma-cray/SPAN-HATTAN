@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ShoppingCart } from "lucide-react";
 import { useCart } from "@/context/CartContext";
+import { useCurrency } from "@/context/CurrencyContext";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
@@ -17,6 +18,7 @@ const links = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { totalItems } = useCart();
+  const { currency, setCurrency } = useCurrency();
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-brand-dark/95 backdrop-blur-md border-b border-white/10">
@@ -24,20 +26,20 @@ export default function Navbar() {
 
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-3 group">
-          <Image 
-            src="/logo.png" 
-            alt="PluginHive Co Logo" 
-            width={40} 
-            height={40} 
-            className="group-hover:scale-105 transition-transform object-contain" 
+          <Image
+            src="/logo.svg"
+            alt="Span Hattan Logo"
+            width={40}
+            height={40}
+            className="group-hover:scale-105 transition-transform object-contain"
           />
           <span className="font-display text-xl font-bold tracking-tight bg-linear-to-r from-brand-teal to-brand-teal/80 bg-clip-text text-transparent">
-            PLUGINHIVE CO
+            Span Hattan
           </span>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -47,6 +49,22 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
+
+          {/* Currency Toggle */}
+          <div className="flex items-center text-xs font-semibold border border-white/20 rounded-full overflow-hidden">
+            <button
+              onClick={() => setCurrency("USD")}
+              className={`px-3 py-1.5 transition-colors ${currency === "USD" ? "bg-brand-teal text-brand-dark" : "text-brand-gray hover:text-white"}`}
+            >
+              USD
+            </button>
+            <button
+              onClick={() => setCurrency("NGN")}
+              className={`px-3 py-1.5 transition-colors ${currency === "NGN" ? "bg-brand-teal text-brand-dark" : "text-brand-gray hover:text-white"}`}
+            >
+              NGN
+            </button>
+          </div>
 
           {/* Cart Icon */}
           <Link href="/cart" className="relative text-brand-gray hover:text-brand-teal transition-colors">
@@ -66,8 +84,22 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile Toggle */}
-        <div className="md:hidden flex items-center gap-4">
+        {/* Mobile Controls */}
+        <div className="md:hidden flex items-center gap-3">
+          <div className="flex items-center text-xs font-semibold border border-white/20 rounded-full overflow-hidden">
+            <button
+              onClick={() => setCurrency("USD")}
+              className={`px-2 py-1 transition-colors ${currency === "USD" ? "bg-brand-teal text-brand-dark" : "text-brand-gray"}`}
+            >
+              USD
+            </button>
+            <button
+              onClick={() => setCurrency("NGN")}
+              className={`px-2 py-1 transition-colors ${currency === "NGN" ? "bg-brand-teal text-brand-dark" : "text-brand-gray"}`}
+            >
+              NGN
+            </button>
+          </div>
           <Link href="/cart" className="relative text-brand-gray">
             <ShoppingCart size={22} />
             {totalItems > 0 && (
