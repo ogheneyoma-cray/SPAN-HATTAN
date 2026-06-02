@@ -6,6 +6,7 @@ export type Product = {
   fullDesc: string;
   price: number;
   category: "Men's Wear" | "Women's Wear" | "Traditional" | "Accessories" | "Footwear" | "Bags";
+  image: string;
 };
 
 export const products: Product[] = [
@@ -17,6 +18,7 @@ export const products: Product[] = [
     fullDesc: "Crafted from the finest Egyptian cotton, the Span Classic Oxford is tailored for the modern gentleman. Features a slim-fit cut, reinforced collar, and a subtle teal interior trim that reflects our signature brand aesthetic. Available in white, navy, and stone.",
     price: 45.00,
     category: "Men's Wear",
+    image: "/products/oxford-shirt.jpg",
   },
   {
     id: "2",
@@ -26,6 +28,7 @@ export const products: Product[] = [
     fullDesc: "A celebration of Nigerian craftsmanship. This two-piece kaftan set is hand-embroidered by our artisans in Katsina, using premium damask fabric. The intricate threadwork along the neckline and cuffs reflects centuries of Northern Nigerian textile heritage. One size fits most; custom sizing available.",
     price: 89.00,
     category: "Traditional",
+    image: "/products/kaftan-set.jpg",
   },
   {
     id: "3",
@@ -35,6 +38,7 @@ export const products: Product[] = [
     fullDesc: "Built to last a lifetime. Our Leather Tote is handstitched by Katsina leatherworkers using full-grain cowhide, finished with a natural wax coating for durability and a rich patina that deepens with age. Features three internal compartments and a reinforced base.",
     price: 65.00,
     category: "Bags",
+    image: "/products/leather-tote.jpg",
   },
   {
     id: "4",
@@ -44,6 +48,7 @@ export const products: Product[] = [
     fullDesc: "Make an unforgettable entrance. Our Grand Agbada Set comprises a flowing outer robe, inner tunic, and matching trousers, all crafted from premium aso-oke fabric with hand-applied gold and silver embroidery. Ideal for weddings, naming ceremonies, and formal occasions.",
     price: 150.00,
     category: "Traditional",
+    image: "/products/agbada-set.jpg",
   },
   {
     id: "5",
@@ -53,6 +58,7 @@ export const products: Product[] = [
     fullDesc: "Where tradition meets contemporary fashion. This wrap dress features a bold, curated Ankara print sourced directly from West African mills, constructed in a flattering A-line silhouette with adjustable waist tie. A versatile piece for both casual and semi-formal settings.",
     price: 55.00,
     category: "Women's Wear",
+    image: "/products/ankara-wrap-dress.jpg",
   },
   {
     id: "6",
@@ -62,6 +68,7 @@ export const products: Product[] = [
     fullDesc: "Form meets function. These slim-tapered cargo pants are cut from a heavyweight cotton twill with reinforced stress points at all pockets. Six functional pockets, a clean front face, and a tailored fit make these suitable for both office casual and weekend wear.",
     price: 48.00,
     category: "Men's Wear",
+    image: "/products/cargo-pants.jpg",
   },
   {
     id: "7",
@@ -71,6 +78,7 @@ export const products: Product[] = [
     fullDesc: "Crafted by skilled Katsina cobblers, these sandals feature a vegetable-tanned leather upper that molds to your foot over time, a cushioned latex insole, and a durable rubber outsole. Available in tan, dark brown, and natural. A staple of effortless style.",
     price: 58.00,
     category: "Footwear",
+    image: "/products/leather-sandals.jpg",
   },
   {
     id: "8",
@@ -80,6 +88,7 @@ export const products: Product[] = [
     fullDesc: "Built for comfort without compromise. Our signature hoodie is crafted from a 400gsm ring-spun cotton fleece blend, pre-shrunk and garment-washed for an immediate lived-in feel. Features a kangaroo pocket, reinforced drawcord hood, and embroidered Span Hattan logo at chest.",
     price: 62.00,
     category: "Men's Wear",
+    image: "/products/hoodie.jpg",
   },
   {
     id: "9",
@@ -89,6 +98,7 @@ export const products: Product[] = [
     fullDesc: "Each necklace is uniquely crafted by women artisans in Katsina using traditional beading techniques passed down through generations. Features a combination of glass, bone, and resin beads in earth tones, with a sterling silver clasp. No two pieces are identical.",
     price: 35.00,
     category: "Accessories",
+    image: "/products/beaded-necklace.jpg",
   },
   {
     id: "10",
@@ -98,6 +108,7 @@ export const products: Product[] = [
     fullDesc: "The definitive smart-casual polo. Knitted from a two-ply pique cotton for superior structure and breathability, featuring our embroidered triple-bar logo on the left chest. A refined alternative to the standard polo for the discerning Span Hattan customer.",
     price: 42.00,
     category: "Men's Wear",
+    image: "/products/polo-shirt.jpg",
   },
   {
     id: "11",
@@ -107,6 +118,7 @@ export const products: Product[] = [
     fullDesc: "An elegant everyday accessory crafted from a silk-cotton blend and finished with hand-rolled edges. The distinctive Ankara pattern is printed using reactive dyes for deep, lasting colour. Versatile enough to be worn as a headwrap, neck scarf, or draped accessory.",
     price: 28.00,
     category: "Accessories",
+    image: "/products/ankara-scarf.jpg",
   },
   {
     id: "12",
@@ -116,5 +128,6 @@ export const products: Product[] = [
     fullDesc: "A timeless silhouette executed in premium full-grain leather with a suede-lined interior, drawstring closure, and an adjustable shoulder strap. The raw-edge detailing and natural tanning give each bag a unique character that only improves with wear.",
     price: 75.00,
     category: "Bags",
+    image: "/products/leather-bucket-bag.jpg",
   },
 ];

@@ -6,7 +6,8 @@ import { formatPrice } from "@/lib/utils";
 import { useCurrency } from "@/context/CurrencyContext";
 import { useCart } from "@/context/CartContext";
 import Link from "next/link";
-import { ArrowLeft, ShoppingCart, Package } from "lucide-react";
+import Image from "next/image";
+import { ArrowLeft, ShoppingCart } from "lucide-react";
 
 export default function ProductPage() {
   const params = useParams();
@@ -43,14 +44,16 @@ export default function ProductPage() {
       </Link>
 
       <div className="grid md:grid-cols-2 gap-12">
-        {/* Product Image Placeholder */}
-        <div className="aspect-square bg-white/5 rounded-2xl flex items-center justify-center">
-          <div className="text-white/40 text-center">
-            <div className="w-24 h-24 bg-brand-teal/20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Package size={32} />
-            </div>
-            <p className="text-sm">Product Image</p>
-          </div>
+        {/* Product Image */}
+        <div className="relative aspect-square rounded-2xl overflow-hidden bg-white/5">
+          <Image
+            src={product.image}
+            alt={product.name}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            priority
+          />
         </div>
 
         {/* Product Details */}
