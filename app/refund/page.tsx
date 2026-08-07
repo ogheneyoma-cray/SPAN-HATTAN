@@ -66,7 +66,7 @@ export default function RefundPage() {
         <section className="mb-10">
           <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">8. Contact Us</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
-            If you have questions about our Refund Policy, please reach out at <a href="mailto:care@spanhattan.com" className="text-brand-teal hover:underline">care@spanhattan.com</a> or call <a href="tel:+2347018869436" className="text-brand-teal hover:underline">+234 701 886 9436</a>. We are here to help Monday through Saturday, 9 AM to 6 PM (WAT).
+            If you have questions about our Refund Policy, please reach out at <a href="mailto:care@spanhattan.com" className="text-brand-teal hover:underline">care@spanhattan.com</a> or call <a href="tel:+2347012408331" className="text-brand-teal hover:underline">+234 701 240 8331</a>. We are here to help Monday through Saturday, 9 AM to 6 PM (WAT).
           </p>
         </section>
       </motion.div>

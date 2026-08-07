@@ -241,8 +241,8 @@ export default function CheckoutPage() {
                 care@spanhattan.com
               </a>{" "}
               or call{" "}
-              <a href="tel:+2347018869436" className="text-brand-teal hover:underline">
-                +234 701 886 9436
+              <a href="tel:+2347012408331" className="text-brand-teal hover:underline">
+                +234 701 240 8331
               </a>.
             </p>
           </div>

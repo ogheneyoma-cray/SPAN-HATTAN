@@ -70,10 +70,10 @@ export default function ContactPage() {
                 <div>
                   <p className="font-semibold mb-1">Call or WhatsApp</p>
                   <a
-                    href="tel:+2347018869436"
+                    href="tel:+2347012408331"
                     className="text-brand-gray hover:text-brand-teal transition-colors"
                   >
-                    +234 701 886 9436
+                    +234 701 240 8331
                   </a>
                   <p className="text-white/30 text-xs mt-1">Mon – Sat, 9 AM – 6 PM (WAT)</p>
                 </div>
