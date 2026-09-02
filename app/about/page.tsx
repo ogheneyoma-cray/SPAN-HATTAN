@@ -14,7 +14,7 @@ export default function AboutPage() {
             The Span Hattan Story
           </h1>
           <p className="text-brand-gray text-lg leading-relaxed">
-            Span Hattan was born in the heart of Katsina — a city renowned across Nigeria for its deep-rooted traditions in leatherwork, embroidery, and textile craft. We were founded by a group of passionate designers and artisans who saw an opportunity to elevate the timeless craftsmanship of Northern Nigeria and present it to the world through a contemporary, premium lens. What started as a small collective producing handmade accessories has grown into a full fashion and lifestyle brand trusted by customers across Nigeria and beyond.
+            Span Hattan was born in the heart of Katsina — a city with a growing community of self-taught developers and designers building for the web. We were founded by a group of passionate engineers and product designers who saw an opportunity to bring world-class digital products to creators and businesses everywhere. What started as a small team building WordPress themes for local clients has grown into a full digital products studio trusted by customers across Nigeria and beyond.
           </p>
         </section>
 
@@ -23,7 +23,7 @@ export default function AboutPage() {
             Our Mission
           </h2>
           <p className="text-brand-gray text-lg leading-relaxed">
-            Our mission is to honour and amplify the cultural heritage of Nigerian fashion by creating products of exceptional quality that transcend trends. We aim to be the bridge — the span — between the rich traditions of our ancestors and the aspirations of the modern African wardrobe. Every piece we create is an invitation to wear your story with pride.
+            Our mission is to make premium, professionally-built digital products accessible to every developer, designer, and business — regardless of budget or team size. We aim to be the bridge — the span — between complex engineering and products anyone can install, customise, and ship with confidence. Every theme, plugin, and kit we build is an invitation to launch faster.
           </p>
         </section>
 
@@ -32,7 +32,7 @@ export default function AboutPage() {
             Our Craft
           </h2>
           <p className="text-brand-gray text-lg leading-relaxed">
-            We work directly with skilled artisans, weavers, and leatherworkers in Katsina, sourcing premium fabrics from across West Africa and beyond. Each product undergoes rigorous quality checks before it leaves our workshop. We are deeply committed to fair trade practices and ensuring that the hands behind our products are valued, respected, and fairly compensated.
+            We work directly with skilled developers, UI designers, and QA engineers based in Katsina and across Nigeria, building on modern frameworks and design systems. Each product undergoes rigorous code review and cross-browser testing before it is listed in our catalog. We are deeply committed to fair compensation and ensuring the people behind our products are valued, respected, and fairly paid.
           </p>
         </section>
 
@@ -42,16 +42,16 @@ export default function AboutPage() {
           </h2>
           <ul className="list-disc list-inside text-brand-gray text-lg leading-relaxed space-y-4 ml-4">
             <li>
-              <strong className="text-white">Authenticity:</strong> We celebrate Nigerian culture and never compromise on the integrity of our craft.
+              <strong className="text-white">Craftsmanship:</strong> We celebrate clean code and thoughtful design, and never compromise on the integrity of our products.
             </li>
             <li>
-              <strong className="text-white">Quality First:</strong> Premium materials, skilled hands, and rigorous standards in every single product.
+              <strong className="text-white">Quality First:</strong> Modern tooling, skilled engineers, and rigorous standards in every single release.
             </li>
             <li>
-              <strong className="text-white">Community:</strong> We invest in our local artisans, supporting livelihoods and preserving craft traditions for future generations.
+              <strong className="text-white">Community:</strong> We invest in our local developer talent, supporting livelihoods and growing Nigeria's tech ecosystem.
             </li>
             <li>
-              <strong className="text-white">Customer Commitment:</strong> We stand behind every product and are always here when you need us.
+              <strong className="text-white">Customer Commitment:</strong> We stand behind every product and are always here when you need support.
             </li>
           </ul>
         </section>

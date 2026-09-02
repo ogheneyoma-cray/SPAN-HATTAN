@@ -17,7 +17,7 @@ export default function TermsPage() {
         <section className="mb-10">
           <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">1. Overview</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
-            This website is operated by Span Hattan, a fashion and lifestyle brand based in Katsina, Nigeria. By visiting our website and/or purchasing products from us, you agree to be bound by the following terms and conditions, including our Privacy Policy, Refund Policy, and Shipping Policy, all of which are incorporated herein by reference. Please read these terms carefully before using our site. If you do not agree to these terms, you may not access or use our website.
+            This website is operated by Span Hattan, a digital products studio based in Katsina, Nigeria, offering website themes, plugins, UI kits, and related software solutions. By visiting our website and/or purchasing products from us, you agree to be bound by the following terms and conditions, including our Privacy Policy, Refund Policy, and Delivery Policy, all of which are incorporated herein by reference. Please read these terms carefully before using our site. If you do not agree to these terms, you may not access or use our website.
           </p>
         </section>
 
@@ -31,7 +31,7 @@ export default function TermsPage() {
         <section className="mb-10">
           <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">3. Products and Pricing</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
-            All products displayed on our website are subject to availability. We reserve the right to discontinue any product at any time without notice. Prices are listed in US Dollars (USD) and Nigerian Naira (NGN) using an indicative exchange rate. Final pricing at checkout may reflect current exchange rates. We make every effort to display our products accurately, including colours and dimensions; however, we cannot guarantee that your display accurately reflects the product&apos;s appearance. We reserve the right to correct any errors in pricing or product descriptions and to cancel orders placed at an incorrect price.
+            All products displayed on our website are subject to availability. We reserve the right to discontinue any product or modify its feature set at any time, though existing customers will retain access to versions they have already purchased. Prices are listed in US Dollars (USD) and Nigerian Naira (NGN) using an indicative exchange rate. Final pricing at checkout may reflect current exchange rates. We make every effort to display our products accurately, including screenshots and feature descriptions; however, actual product behaviour may vary depending on your platform, browser, or configuration. We reserve the right to correct any errors in pricing or product descriptions and to cancel orders placed at an incorrect price.
           </p>
         </section>
 

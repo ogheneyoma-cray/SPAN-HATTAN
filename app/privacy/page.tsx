@@ -31,7 +31,7 @@ export default function PrivacyPage() {
         <section className="mb-10">
           <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">3. How We Use Your Data</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
-            We use your personal data strictly for purposes that are lawful and necessary. Your information is used to: process and fulfil your orders, including dispatching products and sending you delivery updates; manage our relationship with you, including responding to customer service enquiries; send you transactional emails such as order confirmations and receipts; comply with legal obligations including maintaining accurate financial records; and improve our website and product offerings based on aggregate usage patterns. We will never sell your personal data to third parties. We do not use your data for profiling, automated decision-making, or marketing without your explicit consent.
+            We use your personal data strictly for purposes that are lawful and necessary. Your information is used to: process and fulfil your orders, including issuing license keys and delivering download links; manage our relationship with you, including responding to customer service enquiries; send you transactional emails such as order confirmations, receipts, and product update notifications; comply with legal obligations including maintaining accurate financial records; and improve our website and product offerings based on aggregate usage patterns. We will never sell your personal data to third parties. We do not use your data for profiling, automated decision-making, or marketing without your explicit consent.
           </p>
         </section>
 

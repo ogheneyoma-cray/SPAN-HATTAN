@@ -33,7 +33,7 @@ export default function ContactPage() {
         >
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 text-brand-teal">Get in Touch</h1>
           <p className="text-brand-gray text-lg max-w-xl">
-            We&apos;d love to hear from you. Whether you have a question about an order, need sizing advice, or just want to say hello — our team is ready to help.
+            We&apos;d love to hear from you. Whether you have a question about an order, need help with a license, or just want to say hello — our team is ready to help.
           </p>
         </motion.div>
 
@@ -84,7 +84,7 @@ export default function ContactPage() {
                   <MapPin size={20} className="text-brand-teal" />
                 </div>
                 <div>
-                  <p className="font-semibold mb-1">Visit Our Store</p>
+                  <p className="font-semibold mb-1">Our Office</p>
                   <address className="text-brand-gray not-italic leading-relaxed">
                     Kofar Marusa Katsina Quarters<br />
                     Behind Yan Doma Hause<br />

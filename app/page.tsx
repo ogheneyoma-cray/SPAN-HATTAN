@@ -1,37 +1,37 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Shirt, Gem, Package } from "lucide-react";
+import { ArrowRight, LayoutTemplate, Puzzle, Blocks } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 
 const categories = [
   {
-    icon: <Shirt size={28} />,
-    title: "Premium Fashion",
-    desc: "Contemporary clothing crafted from the finest fabrics for the modern wardrobe.",
+    icon: <LayoutTemplate size={28} />,
+    title: "Themes & Templates",
+    desc: "Pixel-perfect WordPress, Shopify, and website themes built for speed and conversion.",
   },
   {
-    icon: <Package size={28} />,
-    title: "Traditional Wear",
-    desc: "Authentic Nigerian attire — kaftans, agbadas, and ankara — honoring our rich heritage.",
+    icon: <Puzzle size={28} />,
+    title: "Plugins & Extensions",
+    desc: "Battle-tested plugins that add SEO, payments, forms, and automation to any site.",
   },
   {
-    icon: <Gem size={28} />,
-    title: "Handcrafted Accessories",
-    desc: "Bags, jewellery, and scarves made by skilled Katsina artisans with generations of craft.",
+    icon: <Blocks size={28} />,
+    title: "UI Kits & Software Solutions",
+    desc: "Coded and Figma component libraries that help product teams ship faster.",
   },
 ];
 
 const whyChooseUs = [
-  { title: "Authentic Craftsmanship", desc: "Every piece is made by skilled hands using time-honoured techniques and premium materials sourced from across Nigeria and beyond." },
-  { title: "Quality Guaranteed", desc: "We stand behind every product we sell. If you are not satisfied, our team is here to make it right — no hassle, no delay." },
-  { title: "Fast Nationwide Delivery", desc: "Orders are processed and dispatched within 2 business days, with reliable delivery across Nigeria and selected international destinations." },
+  { title: "Built by Engineers", desc: "Every product is written by experienced developers and designers, reviewed for performance, accessibility, and clean code." },
+  { title: "Quality Guaranteed", desc: "We stand behind every product we sell. If something isn't working as expected, our team is here to make it right — no hassle, no delay." },
+  { title: "Instant Digital Delivery", desc: "No warehouses, no couriers. Your files, license key, and documentation land in your inbox the moment payment is confirmed." },
 ];
 
 const process = [
-  { step: "1", title: "Browse Our Collection", desc: "Explore our curated range of premium fashion, traditional wear, and handcrafted accessories — something for every occasion." },
-  { step: "2", title: "Place Your Order", desc: "Add items to your cart, choose your currency, and complete a secure checkout in under two minutes." },
-  { step: "3", title: "Delivered to Your Door", desc: "We package your order with care and dispatch it swiftly. Track your shipment from our warehouse straight to your door." },
+  { step: "1", title: "Browse Our Catalog", desc: "Explore our curated range of themes, plugins, UI kits, and software solutions — built for every stack and platform." },
+  { step: "2", title: "Place Your Order", desc: "Add products to your cart, choose your currency, and complete a secure checkout in under two minutes." },
+  { step: "3", title: "Download & Deploy", desc: "Get instant access to your files, license key, and setup docs by email — install and start building right away." },
 ];
 
 const fadeInUp: Variants = {
@@ -75,16 +75,16 @@ export default function HomePage() {
           className="relative z-10 flex flex-col items-center"
         >
           <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-6 max-w-4xl">
-            Wear Your Heritage. Own Your Style.
+            Build Faster. Ship Better.
           </h1>
           <p className="text-brand-gray max-w-2xl text-lg mb-10 leading-relaxed">
-            Welcome to Span Hattan — a premium fashion and lifestyle brand rooted in Katsina, Nigeria. We bring you exquisite clothing, authentic traditional wear, and handcrafted accessories that tell a story of culture, quality, and elegance.
+            Welcome to Span Hattan — a digital products studio based in Katsina, Nigeria. We build premium website themes, plugins, UI kits, and software solutions that help developers, designers, and businesses launch faster.
           </p>
           <Link
             href="/shop"
             className="bg-brand-teal text-brand-dark px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-brand-teal-light transition-all inline-flex items-center gap-2 rounded-full"
           >
-            Explore Our Collection <ArrowRight size={16} />
+            Explore Our Products <ArrowRight size={16} />
           </Link>
         </motion.div>
       </section>
@@ -98,10 +98,10 @@ export default function HomePage() {
         className="max-w-4xl mx-auto px-6 py-24 text-center"
       >
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          Crafted with Pride, Worn with Confidence.
+          Engineered with Care, Shipped with Confidence.
         </h2>
         <p className="text-brand-gray text-lg leading-relaxed">
-          At Span Hattan, we believe that clothing is more than fabric — it is identity. Born in Katsina and inspired by the rich textile traditions of Northern Nigeria, our collections blend contemporary design with authentic craftsmanship to create pieces that stand apart. Every stitch, every dye, and every cut is a reflection of our commitment to quality.
+          At Span Hattan, we believe great software starts with great craft. Born in Katsina and built by a team of developers and designers, our themes, plugins, and UI kits blend clean code with thoughtful design to create digital products that stand apart. Every line, every component, and every release is a reflection of our commitment to quality.
         </p>
       </motion.section>
 
@@ -115,10 +115,10 @@ export default function HomePage() {
             variants={fadeInUp}
           >
             <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-6">
-              Something for Every Occasion
+              Something for Every Stack
             </h2>
             <p className="text-brand-gray text-center mb-16 text-lg">
-              From boardrooms to ceremonies, we have the piece that completes your look:
+              From launching a new site to scaling a product, we have the tool that completes your build:
             </p>
           </motion.div>
           <motion.div
@@ -157,7 +157,7 @@ export default function HomePage() {
           The <span className="text-brand-teal">Span Hattan</span> Difference
         </motion.h2>
         <p className="text-brand-gray text-center max-w-2xl mx-auto mb-16 text-lg">
-          We do not just sell clothes. We build relationships with our customers through the shared values of quality, authenticity, and impeccable service.
+          We do not just sell code. We build relationships with our customers through the shared values of quality, reliability, and impeccable support.
         </p>
         <motion.div
           variants={staggerContainer}
@@ -185,7 +185,7 @@ export default function HomePage() {
             variants={fadeInUp}
             className="font-display text-4xl font-bold text-center mb-16"
           >
-            Simple. Secure. Delivered.
+            Simple. Secure. Instant.
           </motion.h2>
           <motion.div
             variants={staggerContainer}
@@ -218,10 +218,10 @@ export default function HomePage() {
         className="py-32 px-6 text-center"
       >
         <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
-          Ready to Elevate Your Wardrobe?
+          Ready to Level Up Your Build?
         </h2>
         <p className="text-brand-gray max-w-xl mx-auto mb-10 text-lg">
-          Join a growing community of style-conscious individuals across Nigeria and the world who choose Span Hattan for quality that speaks for itself.
+          Join a growing community of developers, designers, and businesses across Nigeria and the world who choose Span Hattan for digital products that speak for themselves.
         </p>
         <Link
           href="/shop"

@@ -12,8 +12,8 @@ export default function ShopPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 py-12">
       <div className="mb-10">
-        <h1 className="font-display text-4xl md:text-5xl font-bold mb-3">Shop Our Collection</h1>
-        <p className="text-brand-gray text-lg">Premium fashion, traditional wear, and handcrafted accessories from Katsina.</p>
+        <h1 className="font-display text-4xl md:text-5xl font-bold mb-3">Shop Our Catalog</h1>
+        <p className="text-brand-gray text-lg">Premium themes, plugins, UI kits, and software solutions built by the Span Hattan team.</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {products.map((product) => (

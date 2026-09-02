@@ -77,7 +77,7 @@ export default function CheckoutPage() {
           Thank you for shopping with Span Hattan.
         </p>
         <p className="text-brand-gray mb-8">
-          A confirmation has been sent to <span className="text-white font-semibold">{form.email}</span>. We will process and ship your order within 2 business days.
+          Your download links, license keys, and setup docs have been sent to <span className="text-white font-semibold">{form.email}</span>. Check your inbox to get started right away.
         </p>
         <Link
           href="/shop"
@@ -112,9 +112,10 @@ export default function CheckoutPage() {
         {/* FORM — left 3 cols */}
         <form onSubmit={handleSubmit} className="lg:col-span-3 space-y-6">
 
-          {/* Shipping Info */}
+          {/* Billing Info */}
           <div className="border border-white/10 rounded-2xl p-6 bg-white/3 space-y-4">
-            <h2 className="font-display text-xl font-bold mb-2">Shipping Information</h2>
+            <h2 className="font-display text-xl font-bold mb-2">Billing Information</h2>
+            <p className="text-xs text-brand-gray -mt-2">Your license keys and download links will be sent to the email address below — no physical address needed.</p>
 
             <div className="grid grid-cols-2 gap-4">
               <input name="firstName" required placeholder="First Name" value={form.firstName} onChange={handleChange} className={inputClass} />
@@ -123,7 +124,7 @@ export default function CheckoutPage() {
 
             <input name="email" type="email" required placeholder="Email Address" value={form.email} onChange={handleChange} className={inputClass} />
             <input name="phone" type="tel" required placeholder="Phone Number" value={form.phone} onChange={handleChange} className={inputClass} />
-            <input name="address" required placeholder="Street Address" value={form.address} onChange={handleChange} className={inputClass} />
+            <input name="address" required placeholder="Billing Address" value={form.address} onChange={handleChange} className={inputClass} />
 
             <div className="grid grid-cols-2 gap-4">
               <input name="city" required placeholder="City" value={form.city} onChange={handleChange} className={inputClass} />
@@ -226,8 +227,8 @@ export default function CheckoutPage() {
                 <span>{formatPrice(convert(total), currency)}</span>
               </div>
               <div className="flex justify-between text-sm text-white/60">
-                <span>Shipping</span>
-                <span className="text-brand-teal">Calculated at dispatch</span>
+                <span>Delivery</span>
+                <span className="text-brand-teal">Instant Download</span>
               </div>
               <div className="flex justify-between font-bold text-lg pt-2 border-t border-white/10">
                 <span>Total</span>

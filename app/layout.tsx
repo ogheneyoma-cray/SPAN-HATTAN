@@ -18,8 +18,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Span Hattan | Premium Fashion & Lifestyle",
-  description: "Discover premium fashion and lifestyle products from Span Hattan — Katsina's home of quality clothing, traditional wear, and handcrafted accessories.",
+  title: "Span Hattan | Digital Themes, Plugins & Software Solutions",
+  description: "Discover premium digital themes, plugins, UI kits, and software solutions from Span Hattan — Katsina's home of quality, developer-first digital products.",
 };
 
 export default function RootLayout({

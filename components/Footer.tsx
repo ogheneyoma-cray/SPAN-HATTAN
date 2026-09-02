@@ -11,7 +11,7 @@ export default function Footer() {
           <Link href="/privacy" className="text-sm text-brand-gray hover:text-brand-teal transition-colors">Privacy Policy</Link>
           <Link href="/terms" className="text-sm text-brand-gray hover:text-brand-teal transition-colors">Terms</Link>
           <Link href="/refund" className="text-sm text-brand-gray hover:text-brand-teal transition-colors">Refund Policy</Link>
-          <Link href="/shipping" className="text-sm text-brand-gray hover:text-brand-teal transition-colors">Shipping</Link>
+          <Link href="/shipping" className="text-sm text-brand-gray hover:text-brand-teal transition-colors">Delivery</Link>
           <Link href="/contact" className="text-sm text-brand-gray hover:text-brand-teal transition-colors">Contact</Link>
         </div>
       </div>
